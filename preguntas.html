@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <title>ElectrOficce - Inicio</title>
+</head>
+
+<body>
+  <header id="header">
+    <a href="#"><img src="img/logo/Logo.png" alt="logo" class="logo"></a>
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Cantactos</a></li>
+        <li id="lg-bag"><a><i class="bi bi-cart-fill" id="carritoContenedor">0</i></a></li>
+
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+          <div class="modal-header">
+            <h3 class="modal-title">Carrito</h3>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" id="vaciarCarrito">
+              Vaciar carrito
+            </button>
+            <button type="button" id="procesarCompra" class="btn btn-primary">
+              Continuar compra
+            </button>
+            <div class="precioTotal">
+              <p>Precio total:  S/.<span class="text-center" id="precioTotal"></span></p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="#" id="close"><i class="fas fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <!-- <a href="cart.html"><i class="fas fa-shopping-bag"></i></a> -->
+      <!-- <i class="fas fa-shopping-cart" id="carritoContenedor">0</i> -->
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+
+  <main class="main">
+      <section id="page-header">
+            <h2>#Tecnología</h2>
+            <p>Los mejores productos teconológico con un super precio</p>
+        </section>
+    <div class="accordion acordeon-container" id="accordionExample">
+      <div class="accordion-item item-container">
+          <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  <h6> Realizar Pedido </h6>
+              </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <p> 
+                      Solo tenés que seleccionar todos los productos que deseas adquirir. Seguidamente, en el carrito de compras, para conocer el costo del envío colocás tu código postal en el recuadro correspondiente, elegís la mensajería de tu preferencia y debajo seleccionas la forma de pago. Luego hacés clic en el botón COMPRAR y podés acceder como cliente o crear un cliente nuevo. Por último, completás los pasos brindados por el asistente, hasta confirmar la compra.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item item-container">
+          <h2 class="accordion-header " id="headingTwo">
+              <button class="accordion-button collapsed item" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Formas de Pago
+              </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <p>
+                      Podras comprar con tarjeta Visa, MasterCard o MercadoPago (Tarjetas online, PagoFácil y RapiPago) con los cuales podés abonar en cuotas, al precio de lista.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item item-container">
+          <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Envios
+              </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <p>
+                      Actualmente realizamos envíos a todo el país través de Oca y Andreani.
+                  </p>
+              </div>
+          </div>
+      </div> 
+
+      <div class="accordion-item item-container">
+          <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  Facturación
+              </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <p>
+                      En todas las compras efectuadas en la web, brindamos sin excepción alguna, la factura de compra. Una vez que realiza y abona el pedido, enviamos a tu dirección de correo electrónico la factura correspondiente.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item item-container">
+          <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Garantía
+              </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <p>
+                      Para realizar consultas/reclamos relacionadas con la garantía o devolución de alguna de tus compras, en la sección contacto podes realizar una consulta donde debes exponer tu caso, seleccionando el motivo de “Posventa” que se adapte a tu requerimiento y uno de nuestros representantes te ofrecerá la información correspondiente sobre cómo proceder.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  </main>
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="img/logo/Logo.png" alt="logo" srcset="">
+    </div>
+    <div class="col">
+      <h4>Contacto:</h4>
+      <p><strong>Dirección:</strong>132 Av. Tomas Valle, San Martin de Porres, Lima, 15202</p>
+      <p><strong>Teléfono:</strong>+51 940333910</p>
+    </div>
+    <div class="col">
+      <h4>Enlaces:</h4>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Preguntas</a>
+      <a href="#">Contactos</a>
+    </div>
+    <div class="col">
+      <h4>Pedidos:</h4>
+      <a href="# ">Carrito de Compra</a>
+      <a href="# ">Seguimiento de Pedido</a>
+      <a href="# ">Favoritos</a>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2022 - <a href="#">ElectrOffice</a></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main2.js"></script>
+
+</body>
+
+</html>

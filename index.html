@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo/Logo.png" type="image/x-icon">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <title>ElectrOficce - Inicio</title>
+</head>
+
+<body>
+  <header id="header">
+    <a href="#"><img src="img/logo/Logo.png" alt="logo" class="logo"></a>
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="preguntas.html">Preguntas</a></li>
+        <li><a href="contact.html">Cantactos</a></li>
+        <li id="lg-bag"><a><i class="bi bi-cart-fill" id="carritoContenedor">0</i></a></li>
+
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+          <div class="modal-header">
+            <h3 class="modal-title">Carrito</h3>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" id="vaciarCarrito">
+              Vaciar carrito
+            </button>
+            <button type="button" id="procesarCompra" class="btn btn-primary">
+              Continuar compra
+            </button>
+            <div class="precioTotal">
+              <p>Precio total:  S/.<span class="text-center" id="precioTotal"></span></p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="#" id="close"><i class="fas fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <!-- <a href="cart.html"><i class="fas fa-shopping-bag"></i></a> -->
+      <!-- <i class="fas fa-shopping-cart" id="carritoContenedor">0</i> -->
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+  <main class="main">
+
+    <section class="home container" id="home">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/bannerPromocion.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/bannerLaptop3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/bannerLaptop2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/bannerMonitor.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/BannerPcGamer.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="section-p1">
+      <h2>Nuestros Productos</h2>
+      <p>Tenemos los mejores productos de tecnología</p>
+      <div class="container-productos" data-aos="fade-down">
+
+      </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+      <!-- <h4>Repair Services</h4>
+      <h2>Up to <span>70% off</span> - All t-shirt & Accessories</h2> -->
+      <!-- <button class="normal">Explore More</button> -->
+    </section>
+
+    <!-- <section class="section-p1">
+      <h2>Fuature Products</h2>
+      <p>Summer Collection New Morden Design</p>
+      <div class="container-productos" data-aos="fade-down">
+
+      </div>
+    </section> -->
+
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box">
+        <!-- <h4>crazy deals</h4> -->
+        <!-- <h2>buy 1 get 1 free</h2> -->
+        <!-- <span>The best classic is on sale at cara</span> -->
+        <!-- <button class="white">Learn More</button> -->
+      </div>
+      <div class="banner-box banner-box-2">
+        <!-- <h4>spring/summer</h4> -->
+        <!-- <h2>upcomming season</h2> -->
+        <!-- <span>The best classic is on sale at cara</span> -->
+        <!-- <button class="white">Collection</button> -->
+      </div>
+    </section>
+
+    <section id="banner3">
+      <div class="banner-box">
+        <!-- <h2>SEASONAL SALE</h2> -->
+        <!-- <h3>Winter Collection -50% OFF</h3> -->
+      </div>
+      <div class="banner-box banner-box2">
+        <!-- <h2>SEASONAL SALE</h2> -->
+        <!-- <h3>Spring/Summer 2022</h3> -->
+      </div>
+      <div class="banner-box  banner-box3">
+        <!-- <h2>T-SHIRTS</h2> -->
+        <!-- <h3>New Trendy Prints</h3> -->
+      </div>
+    </section>
+  </main>
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="img/logo/Logo.png" alt="logo" srcset="">
+    </div>
+    <div class="col">
+      <h4>Contacto:</h4>
+      <p><strong>Dirección:</strong>132 Av. Tomas Valle, San Martin de Porres, Lima, 15202</p>
+      <p><strong>Teléfono:</strong>+51 940333910</p>
+    </div>
+    <div class="col">
+      <h4>Enlaces:</h4>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Preguntas</a>
+      <a href="#">Contactos</a>
+    </div>
+    <div class="col">
+      <h4>Pedidos:</h4>
+      <a href="# ">Carrito de Compra</a>
+      <a href="# ">Seguimiento de Pedido</a>
+      <a href="# ">Favoritos</a>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2022 - <a href="#">ElectrOffice</a></p>
+    </div>
+  </footer>
+
+
+
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main2.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo/Logo.png" type="image/x-icon">
+    <title>ElectrOficce - Productos</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#"><img src="img/logo/Logo.png" alt="logo" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="shop.html">Productos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Cantactos</a></li>
+                <li id="lg-bag"><a><i class="bi bi-cart-fill" id="carritoContenedor">0</i></a></li>
+                <div class="modal" tabindex="-1" role="dialog" id="modal">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Carrito</h3>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                            Vaciar carrito
+                        </button>
+                        <button type="button" id="procesarCompra" class="btn btn-primary">
+                            Continuar compra
+                        </button>
+                        <div class="precioTotal">
+                            <p>Precio total: S/.<span class="text-center" id="precioTotal"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <!-- <a href="cart.html"><i class="fas fa-shopping-bag"></i></a> -->
+            <!-- <i class="fas fa-shopping-cart" id="carritoContenedor">0</i> -->
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main class="main">
+        <section id="page-header">
+            <h2>#Tecnología</h2>
+            <p>Los mejores productos teconológico con un super precio</p>
+        </section>
+
+        <section class="filter">
+            <div class="buscador">
+                <label for="buscar"><span><i class="bi bi-search"></i></span></label>
+                <input type="text" id="buscar" placeholder="Buscar relojes...">
+            </div>
+            <div class="category">
+                <select id="category" onclick="categoryValue()">
+                    <option value="">Marcas</option>
+                    <option value="Audifonos">Audifonos</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Impresora">Impresora</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Escritorio">Escritorio</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="section-p1">
+            <div class="container-productos">
+
+            </div>
+        </section>
+
+        <section id="pagination" class="section-p1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+        </section>
+    </main>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="" srcset="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>562 Wellington Road,Street 32, San Francisco</p>
+            <p><strong>Phone:</strong>+01 2222 365 /(+91) 01 2345 6789</p>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="# ">Sign In</a>
+            <a href="# ">View Cart</a>
+            <a href="# ">My Wishlist</a>
+            <a href="# ">track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>@ 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main2.js"></script>
+</body>
+
+</html>
