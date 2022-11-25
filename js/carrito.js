@@ -1,4 +1,5 @@
 let carrito = [];
+// carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const contenedor = document.querySelector(".container-productos");
 const carritoContenedor = document.querySelector("#carritoContenedor");
@@ -14,18 +15,21 @@ const procesarCompra = document.querySelector("#procesarCompra");
 
 const activarFuncion = document.querySelector("#activarFuncion");
 
-if (activarFuncion) {
-  activarFuncion.addEventListener("click", procesarPedido);
-}
 
-document.addEventListener("DOMContentLoaded", () => {
-  carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
-  mostrarCarrito();
+function guardarLocal() {
   if (activarFuncion) {
-    document.querySelector("#activarFuncion").click(procesarPedido);
+    activarFuncion.addEventListener("click", procesarPedido);
   }
-});
+  document.addEventListener("DOMContentLoaded", () => {
+    carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    
+    mostrarCarrito();
+    if (activarFuncion) {
+      document.querySelector("#activarFuncion").click(procesarPedido);
+    }
+  });
+}
+guardarLocal();
 
 // Vaciar carrito
 if (vaciarCarrito) {
@@ -52,22 +56,6 @@ if (procesarCompra) {
 }
 
 // IMPRIMIR LOS PRODUCTOS
-// stockProductos.forEach((prod) => {
-//   const { id, nombre, precio, desc, img, cantidad } = prod;
-//   if (contenedor) {
-//     contenedor.innerHTML += `
-//     <article class="container-article">
-//     <img class="image-article" src="${img}" alt="${desc}">
-//     <p class="nombre-producto">${nombre}</p>
-//     <p class="nombre-producto>${desc}</p>
-//     <p class="precio">S/. ${precio}</p>
-//     <div class="boton-container">
-//     <button class="boton-carrito" onclick="agregarProducto(${id})">SUMAR AL CARRITO</button>
-//     </div>
-//     </article>
-//     `;
-//   }
-// });
 const imprimir = (product) => {
   if (contenedor) {
     contenedor.innerHTML='';

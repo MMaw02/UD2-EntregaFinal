@@ -325,7 +325,7 @@ main .container-productos .container-article .boton-container .boton-carrito:hov
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('/img/bannerTecnologia.webp');
+    background-image: url('../img/bannerTecnologia.webp');
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -400,7 +400,7 @@ button.white {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url('/img/bannerNavidad.webp');
+    background-image: url('../img/bannerNavidad.webp');
     min-width: 530px;
     height: 50vh;
     background-size: cover;
@@ -411,9 +411,8 @@ button.white {
 }
 
 #sm-banner .banner-box-2 {
-    background-image: url('/img/godWardBanner.webp');
+    background-image: url('../img/godWardBanner.webp');
 }
-
 
 /*  */
 
@@ -430,7 +429,7 @@ button.white {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url('/img/gamerBanner.png');
+    background-image: url('../img/gamerBanner.png');
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -440,11 +439,11 @@ button.white {
 }
 
 #banner3 .banner-box2 {
-    background-image: url('/img/decoracionBanner.webp');
+    background-image: url('../img/decoracionBanner.webp');
 }
 
 #banner3 .banner-box3 {
-    background-image: url('/img/escritorioBanner.jfif');
+    background-image: url('../img/escritorioBanner.jfif');
 }
 
 /* Footer */
@@ -621,11 +620,11 @@ footer .copyright {
 }
 
 .bannerProduct {
-    background-image: url('/img/bannerTecnologia2.png');
+    background-image: url('../img/bannerTecnologia2.png');
 }
 
 .bannerPreguntas {
-    background-image: url('/img/bannerPreguntas.jpg');
+    background-image: url('../img/bannerPreguntas.jpg');
 
 }
 
@@ -709,7 +708,7 @@ main .acordeon-container {
 
 /* PAGINA CONTACTO */
 .bannerContact {
-    background-image: url('/img/bannerContact.jpg');
+    background-image: url('../img/bannerContact.jpg');
 }
 
 .contact {
@@ -727,7 +726,6 @@ main .acordeon-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 .container .contactInfo {
