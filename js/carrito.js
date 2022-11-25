@@ -3,7 +3,6 @@ let carrito = [];
 const contenedor = document.querySelector(".container-productos");
 const carritoContenedor = document.querySelector("#carritoContenedor");
 
-
 const precioTotal = document.querySelector("#precioTotal");
 const total = document.querySelector("#total");
 const subtotal = document.querySelector("#subtotal");
@@ -14,7 +13,6 @@ const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const procesarCompra = document.querySelector("#procesarCompra");
 
 const activarFuncion = document.querySelector("#activarFuncion");
-
 
 if (activarFuncion) {
   activarFuncion.addEventListener("click", procesarPedido);
@@ -110,7 +108,7 @@ const agregarProducto = (id) => {
   mostrarCarrito();
 };
 
-const modalBody = document.querySelector(".modal .modal-body");
+const modalBody = document.querySelector(".Modal .modalBody");
 
 const mostrarCarrito = () => {
   if (modalBody) {

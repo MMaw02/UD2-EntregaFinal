@@ -3,7 +3,7 @@ const bar=document.getElementById('bar');
 const  nav=document.getElementById("navbar");
 const close=document.getElementById("close")
 
-const modal = document.querySelector(".modal");
+const modal = document.querySelector(".Modal");
 const lgbag = document.querySelector("#lg-bag");
 
 if(bar){
@@ -18,7 +18,7 @@ if(close){
     })
 }
 
-// ICONO CARRITO
+// MODAL CARRITO
 modal.style.display = "none";
 lgbag.addEventListener('click', ()=> {
   if (modal.style.display == "none") {
@@ -29,7 +29,7 @@ lgbag.addEventListener('click', ()=> {
 })
 
 
-//SWIPER
+//SWIPER SLIDER BANNER
 var swiper = new Swiper('.swiper', {
   centeredSlides: true,
   pagination: {

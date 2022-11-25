@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,24 @@
     <link rel="shortcut icon" href="img/logo/Logo.png" type="image/x-icon">
     <title>ElectrOficce - Productos</title>
 </head>
+
 <body>
     <header id="header">
         <a href="#"><img src="img/logo/Logo.png" alt="logo" class="logo"></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a class="active" href="shop.html">Productos</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Cantactos</a></li>
+                <li><a class="active" href="productos.html">Productos</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="contacto.html">Contactar</a></li>
                 <li id="lg-bag"><a><i class="bi bi-cart-fill" id="carritoContenedor">0</i></a></li>
-                <div class="modal" tabindex="-1" role="dialog" id="modal">
-                    <div class="modal-header">
+
+                <div class="Modal" tabindex="-1" role="dialog" id="modal">
+                    <div class="modalHeader">
                         <h3 class="modal-title">Carrito</h3>
                     </div>
-                    <div class="modal-body"></div>
-                    <div class="modal-footer">
+                    <div class="modalBody"></div>
+                    <div class="modalFooter">
                         <button type="button" class="btn btn-danger" id="vaciarCarrito">
                             Vaciar carrito
                         </button>
@@ -36,6 +38,7 @@
                         </div>
                     </div>
                 </div>
+
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
         </div>
@@ -46,11 +49,10 @@
         </div>
     </header>
     <main class="main">
-        <section id="page-header">
+        <section id="page-header" class="bannerProduct">
             <h2>#Tecnología</h2>
             <p>Los mejores productos teconológico con un super precio</p>
         </section>
-
         <section class="filter">
             <div class="buscador">
                 <label for="buscar"><span><i class="bi bi-search"></i></span></label>
@@ -73,47 +75,38 @@
 
             </div>
         </section>
-
-        <section id="pagination" class="section-p1">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
-        </section>
     </main>
     <footer class="section-p1">
-        <div class="col">
-            <img class="logo" src="img/logo.png" alt="" srcset="">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong>562 Wellington Road,Street 32, San Francisco</p>
-            <p><strong>Phone:</strong>+01 2222 365 /(+91) 01 2345 6789</p>
+        <div class="columna">
+            <img class="logo" src="img/logo/Logo.png" alt="logo" srcset="">
         </div>
-        <div class="col">
-            <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+        <div class="columna">
+            <h4>Contacto:</h4>
+            <p><strong>Dirección:</strong>132 Av. Tomas Valle, San Martin de Porres, Lima, 15202</p>
+            <p><strong>Teléfono:</strong>+51 940333910</p>
         </div>
-        <div class="col">
-            <h4>My Account</h4>
-            <a href="# ">Sign In</a>
-            <a href="# ">View Cart</a>
-            <a href="# ">My Wishlist</a>
-            <a href="# ">track My Order</a>
-            <a href="#">Help</a>
+        <div class="columna">
+            <h4>Enlaces:</h4>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Preguntas</a>
+            <a href="#">Contactos</a>
         </div>
-        <div class="col install">
-            <p>Secured Payment Gateways</p>
-            <img src="img/pay/pay.png" alt="">
+        <div class="columna">
+            <h4>Pedidos:</h4>
+            <a href="# ">Carrito de Compra</a>
+            <a href="# ">Seguimiento de Pedido</a>
+            <a href="# ">Favoritos</a>
         </div>
         <div class="copyright">
-            <p>@ 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
+            <p>Copyright © 2022 - <a href="#">ElectrOffice</a></p>
         </div>
     </footer>
+
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
-    <script src="js/main2.js"></script>
+    <script src="js/carrito.js "></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
