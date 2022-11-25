@@ -182,10 +182,11 @@ function procesarPedido() {
     0
   );
   igvPagar = totalCompra * 0.18;
+  totalPagar = totalCompra + igvPagar;
   
   subtotal.innerText = totalCompra.toFixed(2);
   tax.innerText = (igvPagar).toFixed(2);
-  total.innerText = totalCompra + igvPagar;
+  total.innerText = totalPagar;
   contadorProducto.innerText = carrito.length;
 }
 

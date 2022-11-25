@@ -42,6 +42,11 @@ form.addEventListener("submit", function(e) {
 
         success.style.display = "block";
         success.style.color = "green";
+        
+        setTimeout(() => {
+            success.style.display = "none";
+        }, 6000)
+
         form.reset();
     }
     
